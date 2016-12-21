@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Team9AndroidCA</string>
+    <string name="action_add">Add</string>
+    <string name="home">SGD$</string>
+    <string-array name="status">
+        <item>Sold-Out</item>
+        <item>In-Stock</item>
+    </string-array>
+    <string-array name="categories">
+        <item>Humour</item>
+        <item>History</item>
+        <item>Children</item>
+        <item>Fiction</item>
+        <item>Romance</item>
+        <item>Cooking</item>
+    </string-array>
+</resources>
