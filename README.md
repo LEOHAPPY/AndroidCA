@@ -5,4 +5,4 @@
   <li>WCFService - supply JSON files with WCF in C#</li>
   <li>Team9AndroidCA - Android Studio minimal API level 4.4</li>
 <ol>
-<p>Enjoy!</p>
+<p align="right">Enjoy!</p>
