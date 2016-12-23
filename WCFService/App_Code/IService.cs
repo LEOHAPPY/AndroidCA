@@ -29,7 +29,13 @@ public interface IService
 
     List<WCFBook> GetBookByCg(String cg);
 
-   
+    [OperationContract]
+    [WebInvoke(UriTemplate = "/Delete", Method = "POST",
+        RequestFormat = WebMessageFormat.Json,
+        ResponseFormat = WebMessageFormat.Json)]
+    void Delete(WCFBook Book);
+
+
 
     [OperationContract]
     [WebInvoke(UriTemplate = "/Update", Method = "POST",

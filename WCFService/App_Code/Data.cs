@@ -34,6 +34,8 @@ public class Data
                     (p => p.id == id).ToList<Book>()[0];
         }
     }
+
+
     public static List<Book> GetBookByCg(string cg)
     {
         using (Model m = new Model())
@@ -57,6 +59,15 @@ public class Data
         using (Model m = new Model())
         {
             m.Entry(c).State = System.Data.Entity.EntityState.Modified;
+            
+            m.SaveChanges();
+        }
+    }
+    public static void DeleteBook(Book c)
+    {
+        using (Model m = new Model())
+        {
+            m.Entry(c).State = System.Data.Entity.EntityState.Deleted;
             m.SaveChanges();
         }
     }

@@ -85,4 +85,20 @@ public class Service : IService
         };
         Data.InsertBook(b);
     }
+    public void Delete(WCFBook c)
+    {
+
+        Book b = new Book
+        {
+            id = c.Id,
+            title = c.Title,
+            description = c.Description,
+            price = c.Price,
+            cg = c.Cg,
+            quantity = c.Quantity,
+            image = c.Image
+
+        };
+        Data.DeleteBook(b);
+    }
 }
